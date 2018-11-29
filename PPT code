@@ -1,0 +1,1288 @@
+\documentclass{beamer}
+
+\usetheme{Singapore}
+
+\usepackage[english]{babel}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[T1]{fontenc}
+
+\usepackage{eso-pic}
+
+\usepackage[linguistics]{forest}
+
+\usepackage{nameref}
+
+  \makeatletter
+
+  \newcommand*{\currentname}{\@currentlabelname}
+
+  \makeatother
+
+\usepackage{caption}
+
+\usepackage{media9}
+
+\usepackage[locale=UK,per=slash,decimalsymbol=.,loctolang={DE:ngerman,UK:english}]{siunitx}
+
+\usepackage[backend=bibtex]{biblatex}
+
+\usepackage{booktabs}
+
+\usepackage{fancybox}
+
+  
+
+\bibliography{lib.bib}
+
+\renewcommand*{\bibfont}{\tiny}
+
+%\addtobeamertemplate{navigation symbols}{}{%
+
+%    \usebeamerfont{footline}%
+
+%    \usebeamercolor[fg]{footline}%
+
+%  \hspace{1em}%
+
+  %   \insertframenumber/\inserttotalframenumber
+
+%}
+
+  
+
+  
+
+\setbeamersize{text margin left = 1em}
+
+\setbeamersize{text margin right = 1em}
+
+  
+
+\setbeamertemplate{bibliography item}{}
+
+\setbeamertemplate{bibliography entry title}{}
+
+\setbeamertemplate{bibliography entry location}{}
+
+\setbeamertemplate{bibliography entry note}{}
+
+\setbeamertemplate{navigation symbols}{}
+
+  
+
+\newcommand{\intersec}{\begin{frame}\addtocounter{framenumber}{-1} \huge{\currentname}\end{frame}}
+
+  
+
+\graphicspath{{./img/}}
+
+  
+
+\begin{document}
+
+  
+
+\title{
+
+Automated Source Classification with Random Forests
+
+}
+
+\subtitle{An Overview}
+
+\author{Abhigna Revuru} 
+
+\date{10 July 2018}
+
+\institute{Remeis Observatory \& IIT Kharagpur}
+
+%\logo{\includegraphics[scale=0.1]{rflogo}}
+
+  
+
+\begin{frame}
+
+  \titlepage
+
+\end{frame}
+
+  
+
+\section{Background}
+
+  
+
+\subsection{Intro}
+
+  
+
+\begin{frame}
+
+  \frametitle{What is this about?}
+
+  \begin{itemize}
+
+  \item Aim - Automate source classification for near-real time satellite data (eROSITA)
+
+  \item Input - clean satellite data from 130k sources (hardness ratios, multiwavelength data, spectral features, variability data...)
+
+  \item Output - source types (star, galaxy, black hole, AGN, binary...)
+
+  \end{itemize}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{eROSITA}
+
+  \centering
+
+  \underline{e}xtended \underline{RO}entgen \underline{S}urvey with an \underline{I}maging \underline{T}elescope \underline{A}rray
+
+\newline
+
+\newline
+
+  \begin{minipage}{0.4\textwidth}
+
+  \begin{itemize}
+
+  \item primary instrument aboard the Russian SRG mission
+
+  \item expected launch: Baikonur, March 2019
+
+  \item deep survey of x-ray sky in 0.5-10keV band
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.6\textwidth}
+
+  \begin{figure}
+
+  \centering
+
+  \includegraphics[width=0.8\textwidth]{erosita.jpeg}
+
+  \caption*{eROSITA mirror modules}
+
+  \end{figure}
+
+  \end{minipage}
+
+\end{frame}
+
+\renewcommand{\arraystretch}{1.5}
+
+\setlength{\tabcolsep}{18pt}
+
+\begin{frame}
+
+\frametitle{Technical Specifications}
+
+\begin{center}
+
+\begin{tabular}{ |c||c| } 
+
+  \hline
+
+ Energy range & 0.2 - 10keV \\  
+
+  \hline
+
+ Energy resolution & 138eV at 6keV \\  
+
+  \hline
+
+ Focal length & 1.6m \\
+
+  \hline
+
+ Field of view & 61 arcsec \\
+
+  \hline
+
+ Effective area & 1400 sqcm at 1keV \\  
+
+  \hline
+
+ Time resolution & 50ms \\
+
+  \hline
+
+\end{tabular}
+
+\end{center}
+
+\end{frame}
+
+  
+
+\subsection{Source classes}
+
+  
+
+\begin{frame}
+
+\frametitle{Source classes}
+
+\begin{center}
+
+\begin{forest}
+
+ [objects
+
+ [galaxies
+
+ [Seyfert
+
+ [S1, text=blue
+
+ ]
+
+ [S2, text=blue
+
+ ]
+
+ ]
+
+ [BL Lac, text=blue
+
+ ]
+
+ ]
+
+ [ULX, text=blue
+
+ ]
+
+ [star systems
+
+ [STAR, text=blue
+
+ ]
+
+ [binary systems
+
+ [CV, text=blue
+
+ ]
+
+ [HMXRB, text=blue
+
+ ]
+
+ [LMXRB, text=blue
+
+ ]
+
+ ]
+
+ ]
+
+ ]
+
+\end{forest}
+
+\end{center}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{Galaxies}
+
+  \begin{minipage}{0.4\textwidth}
+
+  \begin{itemize}
+
+  \item luminous nuclei
+
+  \item high surface brightness
+
+  \item high ionisation emission line spectra
+
+  \end{itemize}
+
+  \underline{Seyfert I galaxies}
+
+  \begin{itemize}
+
+  \item Broad H lines
+
+  \item Narrow forbidden lines from H, He, O
+
+  \end{itemize}
+
+  \underline{Seyfert II galaxies}
+
+  \begin{itemize}
+
+  \item No broad emission lines
+
+  \item Strong absorption
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.6\textwidth}
+
+  \begin{figure}
+
+  \centering
+
+  \includegraphics[width=0.8\textwidth]{seyfert.jpg}
+
+  \caption*\centering{NGC 1068, one of the first Seyfert galaxies classified}
+
+  \end{figure}
+
+  \end{minipage}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{BL Lac Objects}
+
+  \begin{minipage}{0.5\textwidth}
+
+ galaxies with AGNs, named after its prototype, BL Lacertae\\
+
+  \begin{itemize}
+
+  \item rapid and large-amplitude flux variability
+
+  \item relatively featureless spectra
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.5\textwidth}
+
+  \begin{figure}
+
+  \centering
+
+  \includegraphics[width=0.6\textwidth]{bllac.jpeg}
+
+  \caption*\centering{H 0323+022, a BL Lac object, with visible host galaxy and close companions}
+
+  \end{figure}
+
+  \end{minipage}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{X-Ray Binaries}
+
+  \begin{center}
+
+ stellar \textbf{\textit{donor}} + compact, black hole/neutron star \textbf{\textit{accretor}}
+
+  \end{center}
+
+  \underline{High Mass X-ray Binaries} (HMXRB)
+
+  \begin{itemize}
+
+  \item donor: main sequence star/white swarf/red giant
+
+  \item mass transfer from donor Roche lobe to accretor
+
+  \end{itemize}
+
+  \hfill\break
+
+  \underline{Low Mass X-ray Binaries} (LMXRB)
+
+  \begin{itemize}
+
+  \item donor: massive star/blue supergiant
+
+  \item mass transfer via donor's stellar wind captured by accretor
+
+  \end{itemize}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{Cataclysmic Variable Stars}
+
+\begin{center}
+
+  \textbf{\textit{accreting}} white dwarf + mass transferring \textbf{\textit{donor}} star
+
+  \end{center}
+
+  \begin{itemize}
+
+  \item binary stars
+
+  \item irregular increase in brightness by a large factor, then drops down to inactive state
+
+  \item easy to classify - rapid variability, luminous, peculiar emission lines
+
+  \end{itemize}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{Ultraluminous x-ray sources}
+
+  \begin{minipage}{0.4\textwidth}
+
+  \begin{itemize}
+
+  \item less luminous than AGNs
+
+  \item but more luminous than any other known stellar process
+
+  \item luminosity exceeds that of neutron stars and stellar black holes
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.6\textwidth}
+
+  \begin{figure}
+
+  \centering
+
+  \includegraphics[width=0.7\textwidth]{ulx.jpg}
+
+  \caption*\centering{Chandra image of NGC 4485 and NGC 4490: two potential ULXs}
+
+  \end{figure}
+
+  \end{minipage}
+
+\end{frame}
+
+  
+
+\section{Using machine learning}
+
+\intersec
+
+\subsection{Methods}
+
+  
+
+\begin{frame}
+
+\frametitle{How to classify an unknown source?}
+
+  \begin{minipage}{0.45\textwidth}
+
+\begin{center}
+
+Traditional way
+
+\end{center}
+
+  \begin{itemize}
+
+  \item crossmatch source positions with catalogues of other wavelengths
+
+  \item workflow: spectral fitting and intuitive classification rules
+
+  \item consumes human effort, time
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.45\textwidth}
+
+\begin{center}
+
+With machine learning
+
+\end{center}
+
+  \begin{itemize}
+
+  \item each 'feature' of the data is mapped by an unknown function to the source class
+
+  \item workflow: optimizing this unknown function for highest accuracy
+
+  \item reproducible, efficient, scalable
+
+  \end{itemize}
+
+  \end{minipage}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{Examples of machine learning}
+
+1. Supervised
+
+\begin{itemize}
+
+\item me telling you the difference
+
+\item you 'teach' the algorithm what conclusions it should come up with
+
+\item eg: predicting world cup outcomes based on old football statistics
+
+\end{itemize}
+
+2. Unsupervised
+
+\begin{itemize}
+
+\item you figuring out the difference for yourself
+
+\item you let the algorithm look for patterns in data by itself
+
+\item eg: distinguishing between pictures of chairs, landscapes and unicorns
+
+\end{itemize}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{What is this black magic?}
+
+\begin{center}
+
+Goal: to generalise beyond the training set
+
+\end{center}
+
+\begin{center}
+
+\  \textbf{y = F(a,b,c,...)}
+
+\end{center}
+
+\begin{itemize}
+
+\item  \textbf{y} is a response variable
+
+\item  \textbf{a,b,c,...} are features of the data
+
+\item What is \textbf{F}?\\
+
+  $\rightarrow$ don't know, don't care\\
+
+  $\rightarrow$ our job to find a blackbox that performs the best
+
+\end{itemize}
+
+\begin{figure}
+
+  \centering
+
+  \includegraphics[width=0.75\textwidth]{ml.png}
+
+\end{figure}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{Blackbox example 1}
+
+  \centering
+
+ Survival on the Titanic - predictor/classifier\\
+
+\begin{minipage}{0.3\textwidth}
+
+\begin{figure}
+
+  \includegraphics[width=\textwidth]{titanic1.png}
+
+\end{figure}
+
+\end{minipage}\hfill
+
+\begin{minipage}{0.33\textwidth}
+
+\begin{figure}
+
+  \includegraphics[width=\textwidth]{titanic2.png}
+
+\end{figure}
+
+\end{minipage}\hfill
+
+\begin{minipage}{0.36\textwidth}
+
+\begin{figure}
+
+  \includegraphics[width=\textwidth]{titanic3.png}
+
+\end{figure}
+
+\end{minipage}
+
+  \centering
+
+ "decision tree"
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{Blackbox example 2}
+
+  \centering
+
+ What if we use multiple instances of a decision tree?\\
+
+  $\Rightarrow$ It becomes a forest!
+
+\begin{figure}
+
+  \includegraphics[width=0.85\textwidth]{rf.jpg}
+
+\end{figure}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{Random forest algorithm}
+
+\begin{itemize}
+
+\item an \textit{ensemble} = complementary trees that contribute to a single effect
+
+\item 'random' $\rightarrow$ each tree is a randomised sample/subset of the training set [\textit{bagging}]\\
+
+$\Rightarrow$ Unique trees, so different classifications, votes are tallied at the end
+
+\item multiple instances reduce noise and average out errors (overfitting)
+
+\item Classifier parameters - number of trees, minimum split, split criteria, etc
+
+\end{itemize}
+
+\end{frame}
+
+  
+
+\section{Implementing random forests}
+
+\intersec
+
+\subsection{datasets}
+
+  
+
+\begin{frame}
+
+\frametitle{Case in point: the EXTraS project}
+
+  \begin{minipage}{0.5\textwidth}
+
+  \begin{itemize}
+
+  \item Maintainer: ESA
+
+  \item Launch: December 1999
+
+  \item Focal length: $\SI{7.4}{\meter}$
+
+  \item Range: $\SI{0.15}{\kilo\electronvolt} - \SI{12}{\kilo\electronvolt}$
+
+  \item Resolution: $\SI{150}{\electronvolt}$
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.5\textwidth}
+
+  \begin{figure}
+
+  \centering
+
+  \includegraphics[width=\textwidth]{xmm.pdf}
+
+  \caption*{XMM-Newton (Jansen et al., 2001)}
+
+  \end{figure}
+
+  \end{minipage}
+
+  \begin{center}
+
+  \underline{\textbf{E}xploring the \textbf{X}-ray and \textbf{Tra}nsient Variable \textbf{S}ky}\\
+
+ to investigate unexplored archival data from the cameras onboard XMM-Newton\\
+
+  \end{center}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{The training dataset}
+
+\begin{itemize}
+
+\item Requirement: must be representative of properties of various sources to ensure a faithful classification
+
+\item  \textbf{Farrell et al 2015} - one of the earliest attempts to use random forests
+
+\item 7383 detections of 2911 sources over 8 source classes
+
+\end{itemize}
+
+\begin{figure}
+
+  \includegraphics[width=0.75\textwidth]{latvslong.jpeg}
+
+\end{figure}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{Balancing the training data}
+
+\begin{itemize}
+
+\item Data set is heavily skewed towards galaxies
+
+\item SMOTE algorithm - 'Synthetic minority over-sampling technique' from Chawla et al 2011
+
+\item oversampling minority classes + undersampling majority class
+
+\end{itemize}
+
+\begin{minipage}{0.5\textwidth}
+
+\begin{figure}
+
+  \includegraphics[width=\textwidth]{trainset.png}
+
+  \caption*{Farrell set}
+
+\end{figure}
+
+\end{minipage}\hfill
+
+\begin{minipage}{0.5\textwidth}
+
+\begin{figure}
+
+  \includegraphics[width=0.91\textwidth]{balancedtrainset.png}
+
+  \caption*{SMOTEd set}
+
+\end{figure}
+
+\end{minipage}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\begin{figure}
+
+  \includegraphics[width=\textwidth]{latvslongsmoted.jpeg}
+
+  \caption*{29365 observations in the balanced training set with a coordinate bias}
+
+\end{figure}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{Parameter optimization}
+
+\begin{figure}
+
+  \includegraphics[width=\textwidth]{code.png}
+
+\end{figure}
+
+\begin{itemize}
+
+\item Train on parameter \textbf{class}
+
+\item Assesing importance of predictors
+
+\item  \textbf{ntree} - trees grown
+
+\item  \textbf{mtry} - variables randomly sampled as candidates at each split, close to usually sqrt(number of variables)
+
+\item can optimise by hit/trial or with \textit{caret} package
+
+\end{itemize}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{Feature selection}
+
+\begin{center}
+
+232 features available for every detection - which ones are important?
+
+\end{center}
+
+\begin{itemize}
+
+\item Object coordinates
+
+\item Hardness ratios
+
+\item Spectral - parameters from 6 models (powerlaw, blackbody, ionised plasma, power law + instrinsically absorbed power law,..)
+
+\item Multiwavelength indices
+
+\item Timing - signal ffr, probability, power, exposure, count rates, fractional variability
+
+\end{itemize}
+
+\end{frame}
+
+  
+
+\section{Results}
+
+\intersec
+
+\subsection{results}
+
+  
+
+\begin{frame}
+
+\frametitle{coordinates}
+
+  \begin{minipage}{0.4\textwidth}
+
+  \begin{itemize}
+
+  \item accuracy = 60\%
+
+  \item variable importance:
+
+  \begin{figure}
+
+  \includegraphics[width=0.7\textwidth]{coordImp.png}
+
+  \end{figure}
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.6\textwidth}
+
+  \begin{figure}
+
+  \includegraphics[width=0.8\textwidth]{coordCF.png}
+
+  \end{figure}
+
+  \end{minipage}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{hardness ratios}
+
+  \begin{minipage}{0.4\textwidth}
+
+  \begin{itemize}
+
+  \item accuracy = 91.4\%
+
+  \item variable importance:
+
+  \begin{figure}
+
+  \includegraphics[width=0.7\textwidth]{hrImp.png}
+
+  \end{figure}
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.6\textwidth}
+
+  \begin{figure}
+
+  \includegraphics[width=0.8\textwidth]{hrCF.png}
+
+  \end{figure}
+
+  \end{minipage}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{coordinates + HR}
+
+  \begin{minipage}{0.4\textwidth}
+
+  \begin{itemize}
+
+  \item accuracy = 92.5\%
+
+  \item variable importance:
+
+  \begin{figure}
+
+  \includegraphics[width=0.7\textwidth]{coordhrImp.png}
+
+  \end{figure}
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.6\textwidth}
+
+  \begin{figure}
+
+  \includegraphics[width=0.8\textwidth]{coordhrCF.png}
+
+  \end{figure}
+
+  \end{minipage}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{spectral fit data}
+
+  \begin{minipage}{0.4\textwidth}
+
+  \begin{itemize}
+
+  \item accuracy = 93.8\%
+
+  \item variable importance:
+
+  \begin{figure}
+
+  \includegraphics[width=0.7\textwidth]{specImp1.png}
+
+  \end{figure}
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.6\textwidth}
+
+  \begin{figure}
+
+  \includegraphics[width=0.8\textwidth]{specCF.png}
+
+  \end{figure}
+
+  \end{minipage}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{coordinates + HR + spectral fit}
+
+  \begin{minipage}{0.4\textwidth}
+
+  \begin{itemize}
+
+  \item accuracy = 96.4\%
+
+  \item variable importance:
+
+  \begin{figure}
+
+  \includegraphics[width=0.8\textwidth]{coordhrspecImp1.png}
+
+  \end{figure}
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.6\textwidth}
+
+  \begin{figure}
+
+  \includegraphics[width=0.8\textwidth]{coordhrspecCF.png}
+
+  \end{figure}
+
+  \end{minipage}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{coordinates + HR + timing}
+
+  \begin{minipage}{0.4\textwidth}
+
+  \begin{itemize}
+
+  \item accuracy = 95.2\%
+
+  \item variable importance:
+
+  \begin{figure}
+
+  \includegraphics[width=0.8\textwidth]{coordhrtimingImp.png}
+
+  \end{figure}
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.6\textwidth}
+
+  \begin{figure}
+
+  \includegraphics[width=0.8\textwidth]{coordhrtimingCF.png}
+
+  \end{figure}
+
+  \end{minipage}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{coordinates + HR + MWL}
+
+  \begin{minipage}{0.4\textwidth}
+
+  \begin{itemize}
+
+  \item accuracy = 95.7\%
+
+  \item variable importance:
+
+  \begin{figure}
+
+  \includegraphics[width=0.7\textwidth]{coordhrmwlImp.png}
+
+  \end{figure}
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.6\textwidth}
+
+  \begin{figure}
+
+  \includegraphics[width=0.8\textwidth]{coordhrmwlCF.png}
+
+  \end{figure}
+
+  \end{minipage}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{coordinates + HR + Spec + timing}
+
+  \begin{minipage}{0.4\textwidth}
+
+  \begin{itemize}
+
+  \item accuracy = 97\%
+
+  \item variable importance:
+
+  \begin{figure}
+
+  \includegraphics[width=0.7\textwidth]{coordhrspectimingImp1.png}
+
+  \end{figure}
+
+  \end{itemize}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.6\textwidth}
+
+  \begin{figure}
+
+  \includegraphics[width=0.8\textwidth]{coordhrspectimingCF.png}
+
+  \end{figure}
+
+  \end{minipage}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{Optimum features to train with}
+
+  \begin{minipage}{0.4\textwidth}
+
+  \begin{figure}
+
+  \includegraphics[width=0.7\textwidth]{allImp1.png}
+
+  \end{figure}
+
+  \end{minipage}\hfill
+
+  \begin{minipage}{0.6\textwidth}
+
+  \begin{figure}
+
+  \includegraphics[width=0.9\textwidth]{allCF.png}
+
+  \end{figure}
+
+  \end{minipage}
+
+\begin{center}
+
+Using 20 features, accuracy = 98.4\%
+
+\end{center}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{Adding spectral fit data}
+
+  \begin{figure}
+
+  \includegraphics[width=0.7\textwidth]{allspecCF.png}
+
+  \end{figure}
+
+\begin{center}
+
+When we include 6 spectral features that contribute the most, we have accuracy = 98.38\%
+
+\end{center}
+
+\end{frame}
+
+  
+
+\section{Conclusions}
+
+\subsection{what do they mean?}
+
+\begin{frame}
+
+\frametitle{Minimal contribution of spectral data}
+
+  
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+\frametitle{Future Work}
+
+\begin{figure}
+
+  \includegraphics[width=\textwidth]{algo.png}
+
+\end{figure}
+
+\end{frame}
+
+  
+
+\begin{frame}
+
+  \centering
+
+  \huge{Questions?}
+
+\end{frame}
+
+  
+
+\end{document}
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTY0MDI4NDY0OV19
+-->
