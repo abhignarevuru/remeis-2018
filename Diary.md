@@ -97,7 +97,7 @@ Pre-visit
 
 30 May '18
 
--   Student journal club in Erlangen - on dosimetry
+-   Student journal club in Erlangen - talk on dosimetry
 -   ECAP seminar in Erlangen - Oliver Hupe (PTB/Braunschweig) on radiation dosimetry
 -   Solved issue with extra factors in the balanced dataset with droplevels()
 -   SMOTE efficiency testing
@@ -105,7 +105,7 @@ Pre-visit
 31 May '18
 
 -   Read up on linear support vector machine
--   Rudimentary implementation for Miri's training set
+-   Rudimentary implementation of Miri's training set
 
 01 June '18
 
@@ -119,9 +119,8 @@ Pre-visit
 
 05 June '18
 
--   Group meeting - Joern, Christian: XIFUsim simulation software update, Philipp: BW-model v2 fit_pars problem solved, Maria: wind accretion model difficulty, faq on nocuta
--   Litclub - Katharina reviewed 'From the Transits of Venus to the Birth of Experimental  
-    Psychology, Physics in Perspective, 2013, 15, 130-159' by Sheehan, W.
+-   Group meeting - Joern & Christian: XIFUsim simulation software update,;Philipp: BW-model v2 fit_pars problem solved; Maria: wind accretion model difficulty, faq on nocuta
+-   Litclub - Katharina reviewed 'From the Transits of Venus to the Birth of Experimental Psychology, Physics in Perspective, 2013, 15, 130-159
 -   Linear SVM model efficiency testing
 
 06 June '18
@@ -290,5 +289,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjE0ODQ5Nl19
+eyJoaXN0b3J5IjpbLTc2MDM4NjA1OV19
 -->
