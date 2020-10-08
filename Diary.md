@@ -249,7 +249,7 @@ Pre-visit
 -   Group meeting: FRANCI prep, XIFUsim update, network upgrades
 -   **Presented my work at group meeting; speculation on why spectral data doesn't contribute to ML**
 -   Discussion with Felix Fuerst (ESAC Integral scientist; visitor) on using a histogram analysis for hardness ratios to test data integrity
--   Philipp's successful bachelor thesis defence - AGN Arakelian 120 Markov chain Monte Carlo analysis of accretion disk density
+-   Philipp's successful bachelor thesis defence on AGN Arakelian 120 Markov chain Monte Carlo analysis of accretion disk density
 
 04 July '18
 
@@ -259,7 +259,7 @@ Pre-visit
 05 July '18
 
 -   writing documentation & reports
--   Discussion with Miri -
+-   Discussion with Miri
 -   _Cooked Indian meal for observatory, barbeque for visitors_
 
 06 July '18
@@ -288,5 +288,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzQ3NDA0MzhdfQ==
+eyJoaXN0b3J5IjpbMTQ5NTM2MTYwN119
 -->
