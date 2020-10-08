@@ -6,7 +6,7 @@
 
 I worked at the x-ray group of the  **Remeis Observatory**  in Bamberg, which is affiliated with the Erlangen Centre for Astroparticle Physics (ECAP) at the Friedrich-Alexander-Universität, Erlangen-Nürnberg in Germany. I was supervised by Prof. Dr.  **Jörn Wilms**  for 9 weeks from mid-May to mid-July.
 
-I mainly worked from the observatory offices in Bamberg and visited Erlangen for talks and seminars. People mentioned here include:  **Jörn**  (my supervisor & head of the x-ray group),  **Mirjam**  Oertel (PhD candidate working on the eXTRaS project for XMM-Newton),  **Philipp**  Weber (Masters student - network admin and software go-to person),  **Ralf**  Ballhausen (PhD candidate - multiwavelength spectra),  **Ingo**  Kreykenbohm (postdoc - satellite telemetry & eROSITA science) and several others at ECAP & Remeis.
+I mainly worked from the observatory offices in Bamberg and visited Erlangen for talks and seminars. People mentioned here include:  **Joern**  (my supervisor & head of the x-ray group),  **Mirjam**  Oertel (PhD candidate working on the eXTRaS project for XMM-Newton),  **Philipp**  Weber (Masters student - network admin and software go-to person),  **Ralf**  Ballhausen (PhD candidate - multiwavelength spectra),  **Ingo**  Kreykenbohm (postdoc - satellite telemetry & eROSITA science) and several others at ECAP & Remeis.
 
 ## [](https://github.com/abhignarevuru/remeis-2018/blob/master/Training%20Diary.md#brief-outline)Brief outline
 
@@ -18,7 +18,7 @@ _tl;dr_ - I worked on a near-**real time automated classification**  system to  
 
 My work contract with Joern required 40 hours of work per week. Place of work and timings are flexible as long I am reachable in person/via telecon and can collaborate with the group effectively.
 
-_Jörn believed that intercultural spirit is a part & parcel of daily life at the observatory, given the group's diversity and Bamberg's historical significance. He wantecultural experiences to be a mandatory part of my visit, hence they are included, italicised._
+_Joern believes that intercultural spirit is part & parcel of daily life at the observatory, given the group's diversity and Bamberg's historical significance. He wanted cultural experiences to be a mandatory part of my visit, hence they are included, italicised._
 
 Pre-visit
 
@@ -37,7 +37,7 @@ Pre-visit
 16 May '18
 
 -   Read up on x-ray astronomy
--   Linux & bash refresher
+-   Linux & bash shell refresher
 -   MAC config with Philipp
 
 17 May '18
@@ -291,5 +291,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MTM1MjM4OV19
+eyJoaXN0b3J5IjpbLTUxMTM3NzA3MV19
 -->
