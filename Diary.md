@@ -153,7 +153,7 @@ Pre-visit
 
 12 June '18
 
--   Group meeting - Thomas: Thursday software meetings are back; Christian, Pablo, Max: XIFUsim new implementation overview, Ingo: eSASS problems
+-   Group meeting - Thomas: Thursday software meetings are back; Christian, Pablo, Max: XIFUsim new implementation overview; Ingo: eSASS problems
 -   RF feature selection tests
 
 13 June '18
@@ -189,7 +189,7 @@ Pre-visit
 
 20 June '18
 
--   Student journal club - Chistopher Schönwälder & Philipp Thalhammer on the Small Magellanic Cloud  _+ free pizza_
+-   Student journal club - Chistopher Schönwälder & Philipp Thalhammer on the Small Magellanic Cloud  + pizza_
 -   ECAP seminar in Erlangen: Frank Haberl (MPE Garching) on XMM-Newton surveys of Magellanic Clouds
 -   Read old WP7 group reports to understand previous results of feature selection
 -   _Barbeque with Ralf, Lia, Victoria, Bosco, Christian, Joern, Javier_
@@ -289,5 +289,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNzk5NDQxOF19
+eyJoaXN0b3J5IjpbLTQ4NTk1NTk5Ml19
 -->
