@@ -1,37 +1,8 @@
+# Training Diary
 
--   [Code](https://github.com/abhignarevuru/remeis-2018)
--   [Issues](https://github.com/abhignarevuru/remeis-2018/issues)
--   [Pull requests](https://github.com/abhignarevuru/remeis-2018/pulls)
--   [Actions](https://github.com/abhignarevuru/remeis-2018/actions)
--   [Projects](https://github.com/abhignarevuru/remeis-2018/projects)
--   [Wiki](https://github.com/abhignarevuru/remeis-2018/wiki)
--   [Security](https://github.com/abhignarevuru/remeis-2018/security)
--   [Insights](https://github.com/abhignarevuru/remeis-2018/pulse)
--   [Settings](https://github.com/abhignarevuru/remeis-2018/settings)
+A chronological outline of internship experiences by  **Revuru Naga Abhigna**  (14PH20029) as part of a mandatory summer rpoject for 2 credits towards an Integrated MSc (Physics) degree from IIT Kharagpur.
 
-master
-
-## [remeis-2018](https://github.com/abhignarevuru/remeis-2018)/**Training Diary.md**
-
-[Go to file](https://github.com/abhignarevuru/remeis-2018/find/master)
-
-[![@abhignarevuru](https://avatars1.githubusercontent.com/u/21285441?s=48&v=4)](https://github.com/abhignarevuru)
-
-[abhignarevuru](https://github.com/abhignarevuru)  [Rename Training Diary to Training Diary.md](https://github.com/abhignarevuru/remeis-2018/commit/82fd2ba85e72d5512ff346fae1d19c1f14777846 "Rename Training Diary to Training Diary.md")
-
-Latest commit  [82fd2ba](https://github.com/abhignarevuru/remeis-2018/commit/82fd2ba85e72d5512ff346fae1d19c1f14777846)  on Nov 29, 2018 [**History**](https://github.com/abhignarevuru/remeis-2018/commits/master/Training%20Diary.md)
-
-**1**  contributor
-
-292 lines (197 sloc)  12.1 KB
-
-[Raw](https://github.com/abhignarevuru/remeis-2018/raw/master/Training%20Diary.md)[Blame](https://github.com/abhignarevuru/remeis-2018/blame/master/Training%20Diary.md)
-
-# [](https://github.com/abhignarevuru/remeis-2018/blob/master/Training%20Diary.md#training-diary)Training diary
-
-A chronological outline of internship experiences by  **Revuru Naga Abhigna**  (14PH20029) as part of a mandatory internship/training program for 2 credits towards an Integrated MSc (Physics) degree from IIT Kharagpur.
-
-## [](https://github.com/abhignarevuru/remeis-2018/blob/master/Training%20Diary.md#place-of-work)Place of work
+## Place of work
 
 I worked at the x-ray group at the  **Remeis Observatory**  in Bamberg, which is affiliated with the Erlangen Centre for Astroparticle Physics (ECAP) at the Friedrich-Alexander-Universität, Erlangen-Nürnberg in Germany. I was supervised by Prof. Dr.  **Jörn Wilms**  for 9 weeks from mid-May to mid-July.
 
@@ -320,5 +291,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNDg4MjM2MV19
+eyJoaXN0b3J5IjpbLTE4OTY4NDM1OTldfQ==
 -->
