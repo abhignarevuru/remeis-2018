@@ -6,7 +6,7 @@
 
 I worked at the x-ray group of the  **Remeis Observatory**  in Bamberg, which is affiliated with the Erlangen Centre for Astroparticle Physics (ECAP) at the Friedrich-Alexander-Universität, Erlangen-Nürnberg in Germany. I was supervised by Prof. Dr.  **Jörn Wilms**  for 9 weeks from mid-May to mid-July.
 
-I mainly worked from the observatory offices in Bamberg and visited Erlangen for talks and seminars. People mentioned here include:  **Jörn**  (my supervisor & x-ray group head),  **Mirjam**  Oertel (PhD candidate - the eXTRaS project for XMM-Newton),  **Philipp**  Weber (Masters student - network admin and software go-to person),  **Ralf**  Ballhausen (PhD candidate - multiwavelength spectra),  **Ingo**  Kreykenbohm (postdoc - satellite telemetry & eROSITA science) and several others at ECAP & Remeis.
+I mainly worked from the observatory offices in Bamberg and visited Erlangen for talks and seminars. People mentioned here include:  **Jörn**  (my supervisor & head of the x-ray group),  **Mirjam**  Oertel (PhD candidate working on the eXTRaS project for XMM-Newton),  **Philipp**  Weber (Masters student - network admin and software go-to person),  **Ralf**  Ballhausen (PhD candidate - multiwavelength spectra),  **Ingo**  Kreykenbohm (postdoc - satellite telemetry & eROSITA science) and several others at ECAP & Remeis.
 
 ## [](https://github.com/abhignarevuru/remeis-2018/blob/master/Training%20Diary.md#brief-outline)Brief outline
 
@@ -291,5 +291,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE4Mjg0MTI0XX0=
+eyJoaXN0b3J5IjpbMTM2NjY2MTExNV19
 -->
