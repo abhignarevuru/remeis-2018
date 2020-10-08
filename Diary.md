@@ -48,26 +48,26 @@ Pre-visit
 
 18 May '18
 
--   Read up on x-ray sources and their production mechanisms
+-   Read up on x-ray sources and production mechanisms
 -   Read eXTRaS project documentation
 -   First look at Miri's data sets
 
 21 May '18
 
 -   (official holiday)
--   Chinese lunar mission Chang'e 4 launch
+-   Chinese lunar mission _Chang'e 4_ launch party
 
 22 May '18
 
 -   Official welcome to the group
--   Group meeting - SIXTE workshop update; Jörn: Gaia uncertainty on distance measurements underestimated; Matthias: possible to estimate mass, radius distribution of neutron stars from supernova simulations; Jörn: new code to simulate winds caused by x-ray absorption onto accretion disk; Katya: solved python+ISIS compatibility issues
+-   Group meeting - SIXTE workshop update; Joern: Gaia uncertainty on distance measurements underestimated; Matthias: possible to estimate mass, radius distribution of neutron stars from supernova simulations; Jörn: new code to simulate winds caused by x-ray absorption onto accretion disk; Katya: solved python+ISIS compatibility issues
 -   Joern's welcome, we formulated an initial plan of action
 
 23 May '18
 
 -   Familiarised myself with the XMM-Netwon catalogue
 -   Finished reading Annika's thesis draft about her classification methods
--   _Joern explaining Bavarian history, cities and culture with Pablo, Bosco & Javier_
+-   _Joern explaining Bavarian history, nearby cities and culture with Pablo, Bosco & Javier_
 
 24 May '18
 
@@ -291,5 +291,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMTM3NzA3MV19
+eyJoaXN0b3J5IjpbMTg2MjM4NzY0OF19
 -->
