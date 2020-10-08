@@ -10,9 +10,9 @@ I mainly worked from the observatory offices in Bamberg and visited Erlangen for
 
 ## [](https://github.com/abhignarevuru/remeis-2018/blob/master/Training%20Diary.md#brief-outline)Brief outline
 
-_For a better context to my work, please see github.com/abhignarevuru/internship-remeis_.
+_For a better context to my work, please see github.com/abhignarevuru/remeis-2018_.
 
-_tl;dr version_  - I worked on a near-**real time automated classification**  system to  **identify astrophysical source classes**  based on satellite data. My method uses machine learning techniques to achieve an unprecedented 98% accuracy rate. My work was specifically tailored for the  **eROSITA**, the primary instrument on board the Spektr-RG satellite (to be launched from Baikonur, March 2019). The satellite is an international cooperative mission with  _Roskosmos_  (Russia), the  _European Space Agency_,  _Space Research Institute_  (Moscow),  _Max-Planck-Institute for Extraterrestrial Physics_  (Germany), and  _NASA/Marshall Space Flight Centre_  (USA).
+_tl;dr_ - I worked on a near-**real time automated classification**  system to  **identify astrophysical source classes**  based on satellite data. My method uses machine learning techniques to achieve an unprecedented 98% accuracy rate. My work was specifically tailored for the  **eROSITA**, the primary instrument on board the Spektr-RG satellite (launched from Baikonur, March 2019). The satellite is an international cooperative mission with  _Roskosmos_  (Russia), the  _European Space Agency_,  _Space Research Institute_  (Moscow),  _Max-Planck-Institute for Extraterrestrial Physics_  (Germany), and  _NASA/Marshall Space Flight Centre_  (USA).
 
 ## [](https://github.com/abhignarevuru/remeis-2018/blob/master/Training%20Diary.md#chronological-diary-of-my-work)Chronological diary of my work
 
@@ -291,5 +291,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NjY2MTExNV19
+eyJoaXN0b3J5IjpbLTIxMTUwMDE0NjBdfQ==
 -->
