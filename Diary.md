@@ -189,7 +189,7 @@ Pre-visit
 
 20 June '18
 
--   Student journal club - Chistopher Schönwälder & Philipp Thalhammer on the Small Magellanic Cloud  + pizza_
+-   Student journal club - Chistopher Schönwälder & Philipp Thalhammer on the Small Magellanic Cloud  + pizza discussion
 -   ECAP seminar in Erlangen: Frank Haberl (MPE Garching) on XMM-Newton surveys of Magellanic Clouds
 -   Read old WP7 group reports to understand previous results of feature selection
 -   _Barbeque with Ralf, Lia, Victoria, Bosco, Christian, Joern, Javier_
@@ -197,7 +197,7 @@ Pre-visit
 21 June '18
 
 -   Remeis wiki update
--   Discussion with Lia Corrales (visitor from MIT) and Javier - US vs German vs Indian undergrad systems, contract types, opportunities at Kavli
+-   Discussion with Lia Corrales (visitor from MIT) and Javier (Caltech) - US vs German vs Indian undergrad systems, contract types, opportunities at Kavli
 -   caret package - reading documentation, can I use it here?
 -   Discussion
 
@@ -217,8 +217,7 @@ Pre-visit
 26 June '18
 
 -   Group meeting - Philipp: chi square hacking for v2, Philipp: Bayesian blocks; Bosco: NuSTAR HMB data fit featuring Compton scattering
--   Litclub: Ralf reviewed 'Spectroscopic observations of the Moon at the lunar surface' by Y. Wu  
-    and B. Hapke, 2018, EPSL
+-   Litclub: Ralf reviewed 'Spectroscopic observations of the Moon at the lunar surface' by Y. Wu and B. Hapke, 2018, EPSL
 -   Figured out how to use the FITS format directly without involving CSV change
 
 27 June '18
@@ -289,5 +288,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NTk1NTk5Ml19
+eyJoaXN0b3J5IjpbLTE5MzQ3NDA0MzhdfQ==
 -->
