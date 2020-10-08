@@ -1,10 +1,10 @@
 # Training Diary
 
-A chronological outline of internship experiences by  **Revuru Naga Abhigna**  (14PH20029) as part of a mandatory summer rpoject for 2 credits towards an Integrated MSc (Physics) degree from IIT Kharagpur.
+ **R N Abhigna**  (14PH20029) summer project experience.
 
 ## Place of work
 
-I worked at the x-ray group at the  **Remeis Observatory**  in Bamberg, which is affiliated with the Erlangen Centre for Astroparticle Physics (ECAP) at the Friedrich-Alexander-Universität, Erlangen-Nürnberg in Germany. I was supervised by Prof. Dr.  **Jörn Wilms**  for 9 weeks from mid-May to mid-July.
+I worked at the x-ray group of the  **Remeis Observatory**  in Bamberg, which is affiliated with the Erlangen Centre for Astroparticle Physics (ECAP) at the Friedrich-Alexander-Universität, Erlangen-Nürnberg in Germany. I was supervised by Prof. Dr.  **Jörn Wilms**  for 9 weeks from mid-May to mid-July.
 
 I mainly worked from the observatory offices in Bamberg and visited Erlangen for talks and seminars. People mentioned here include:  **Jörn**  (my supervisor & x-ray group head),  **Mirjam**  Oertel (PhD candidate - the eXTRaS project for XMM-Newton),  **Philipp**  Weber (Masters student - network admin and software go-to person),  **Ralf**  Ballhausen (PhD candidate - multiwavelength spectra),  **Ingo**  Kreykenbohm (postdoc - satellite telemetry & eROSITA science) and several others at ECAP & Remeis.
 
@@ -291,5 +291,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTY4NDM1OTldfQ==
+eyJoaXN0b3J5IjpbOTE4Mjg0MTI0XX0=
 -->
