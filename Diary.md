@@ -260,7 +260,7 @@ Pre-visit
 
 -   writing documentation & reports
 -   Discussion with Miri
--   _Cooked Indian meal for observatory, barbeque for visitors_
+-   _Cooked Indian meal for barbeque with visitors_
 
 06 July '18
 
@@ -270,13 +270,12 @@ Pre-visit
 
 -   Learnt how to use latex Beamer
 -   Made presentation for talk
--   _Poker night_
 
 10 July '18
 
 -   Group meeting- Tobi Beuchert (Amsterdam, visiting): GR-MHD simulations of accretion in feedback, using adaptive grid-sizes on GPU clusters, Thommy: Software meeting again on Thursday, Joern: FRANCI & ECAP summer party logistics; Radio Telescopes: Delivery due November, with installation; Javier: Cyg X-1; Ingo: eROSITA Telemetry new setup, got CCD noise maps recorded for spacecraft detectors
 -   Talk by Cosimo Bambi, Fudan University on testing GR via reflection spectra
--   **Presented my talk on 'Automated Source Classification with Random Forests'**
+-   **Gave talk on 'Automated Source Classification with Random Forests'**
 
 11 July '18
 
@@ -288,5 +287,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NTM2MTYwN119
+eyJoaXN0b3J5IjpbLTEzNzMyNjE2OTVdfQ==
 -->
