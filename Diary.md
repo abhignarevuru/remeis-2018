@@ -12,13 +12,13 @@ I mainly worked from the observatory offices in Bamberg and visited Erlangen for
 
 _For a better context to my work, please see github.com/abhignarevuru/remeis-2018_.
 
-_tl;dr_ - I worked on a near-**real time automated classification**  system to  **identify astrophysical source classes**  based on satellite data. My method uses machine learning techniques to achieve an unprecedented 98% accuracy rate. My work was specifically tailored for the  **eROSITA**, the primary instrument on board the Spektr-RG satellite (launched from Baikonur, March 2019). The satellite is an international cooperative mission with  _Roskosmos_  (Russia), the  _European Space Agency_,  _Space Research Institute_  (Moscow),  _Max-Planck-Institute for Extraterrestrial Physics_  (Germany), and  _NASA/Marshall Space Flight Centre_  (USA).
+_tl;dr_ - I worked on a near-**real time automated classification**  system to  **identify astrophysical source classes**  based on satellite data. My method uses machine learning techniques to achieve an unprecedented 98% accuracy rate. My work was specifically tailored for the  **eROSITA**, the primary instrument on board the Spektr-RG satellite (launched from Baikonur, March 2019). The satellite is an international cooperative mission with  _Roscosmos_  (Russia), the  _European Space Agency_,  _Space Research Institute_  (Moscow),  _Max-Planck-Institute for Extraterrestrial Physics_  (Germany), and  _NASA/Marshall Space Flight Centre_  (USA).
 
-## [](https://github.com/abhignarevuru/remeis-2018/blob/master/Training%20Diary.md#chronological-diary-of-my-work)Chronological diary of my work
+## Chronological diary of my work
 
-My work contract with Joern requires 40 hours of work per week. Place of work and timings are flexible as long I am reachable in person/via telecon and can collaborate with the group effectively.
+My work contract with Joern required 40 hours of work per week. Place of work and timings are flexible as long I am reachable in person/via telecon and can collaborate with the group effectively.
 
-_Intercultural spirit is a part & parcel of daily life at the observatory, given the group's diversity and Bamberg's historical significance. Jörn encouraged cultural experiences to be a mandatory part of my visit, hence weekday experiences are included, italicised._
+_Jörn believed that intercultural spirit is a part & parcel of daily life at the observatory, given the group's diversity and Bamberg's historical significance. He wantecultural experiences to be a mandatory part of my visit, hence they are included, italicised._
 
 Pre-visit
 
@@ -291,5 +291,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTUwMDE0NjBdfQ==
+eyJoaXN0b3J5IjpbMTA4MTM1MjM4OV19
 -->
