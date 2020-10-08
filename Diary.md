@@ -125,17 +125,17 @@ Pre-visit
 
 06 June '18
 
--   Student journal club in Erlangen - Stephan Dietz on the Local Bubble and Loop I  _+ free pizza_
+-   Student journal club in Erlangen - Stephan Dietz on the Local Bubble and Loop I  + pizza discussion
 -   ECAP seminar in Erlangen - Michael Schulreich on reconstructing the origin of the Local Bubble and Loop I via Earth's radioisotopic signatures
 -   Messier cluster reboot
--   Simon Kreuzer's introduction seminar to the 40cm and the H alpha telescope at observatory
--   Screening of Soyuz launch with ISS cosmonauts
--   _Barbecue celebrations at observatory_
+-   Simon Kreuzer's introduction seminar to the 40cm and the H alpha telescope at the observatory
+-   Screening of Soyuz launch with ISS cosmonauts!
+-   _Barbecue celebration at observatory_
 
 07 June '18
 
 -   Debugging RF code
--   latex refresher
+-   Late refresher
 -   Discussion with Miri & Philipp: feature selection for training?
 
 08 June '18
@@ -289,5 +289,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MDM4NjA1OV19
+eyJoaXN0b3J5IjpbMzgyNTAzMzE4XX0=
 -->
