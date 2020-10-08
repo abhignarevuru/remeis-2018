@@ -81,8 +81,7 @@ Pre-visit
 
 -   Learnt markdown
 -   Started writing documentation
--   _Champions League match at a sports bar with Javier_
--   _Joern's treat: Excursion to Forccheim and Bayreuth hiking trail with Pablo & Bosco_
+-   _Excursion to Forccheim and Bayreuth hiking trail with Pablo & Bosco led by Joern_
 
 28 May '18
 
@@ -291,5 +290,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MjM4NzY0OF19
+eyJoaXN0b3J5IjpbMTAwNjE0ODQ5Nl19
 -->
