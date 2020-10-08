@@ -135,25 +135,25 @@ Pre-visit
 07 June '18
 
 -   Debugging RF code
--   Late refresher
+-   LaTeX refresher
 -   Discussion with Miri & Philipp: feature selection for training?
 
 08 June '18
 
 -   Debugging RF code
 -   can I manipulate FITS directly instead of having to convert to CSV?
--   _Cake: Uli's rhubarb cake celebration_
+-   _Cake: Uli's rhubarb birthday celebration_
 
 11 June '18
 
 -   RF feature selection tests
--   Philipp's idea - using FITSio
--   Discussion with Roberto - using TOPCAT instead
--   _Introduced Pablo to Indian food at Swarg, and he introduced me to flamenco styles_
+-   Philipp's idea - use FITSio!
+-   Discussion with Roberto on using TOPCAT instead
+-   _Introduced Pablo to Indian food at Swarg, and he introduced me to flamenco styles of music_
 
 12 June '18
 
--   Group meeting - Thomas: Thurs software meetings are back, Christian, Pablo, Max: XIFUsim new implementation overview, Ingo: eSASS problems
+-   Group meeting - Thomas: Thursday software meetings are back; Christian, Pablo, Max: XIFUsim new implementation overview, Ingo: eSASS problems
 -   RF feature selection tests
 
 13 June '18
@@ -289,5 +289,5 @@ Pre-visit
 -   My farewell
 -   Flight from Frankfurt
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgyNTAzMzE4XX0=
+eyJoaXN0b3J5IjpbLTgxNzk5NDQxOF19
 -->
